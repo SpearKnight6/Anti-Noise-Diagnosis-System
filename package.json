@@ -1,0 +1,17 @@
+{
+  "name": "anti-noise-growth-diagnosis-system",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "web",
+    "api"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w api\" \"npm run dev -w web\"",
+    "build": "npm run build -w web",
+    "lint": "npm run lint -w web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
